@@ -67,7 +67,9 @@ LOCAL_MODULE := perfprofd
 LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 LOCAL_MODULE_TAGS := debug
 LOCAL_SHARED_LIBRARIES += libcutils
+ifneq ($(QUICKBOOT), 1)
 LOCAL_INIT_RC := perfprofd.rc
+endif
 include $(BUILD_EXECUTABLE)
 
 # Clean temp vars
