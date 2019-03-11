@@ -169,7 +169,7 @@ cc_binary {
         "libutils",
     ],
 
-    init_rc: ["perfprofd.rc"],
+    // init_rc: ["perfprofd.rc"],
 
     product_variables: {
         pdk: {
