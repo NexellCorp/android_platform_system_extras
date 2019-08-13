@@ -169,9 +169,10 @@ cc_binary {
         "libutils",
     ],
 
-    init_rc: ["perfprofd.rc"],
-
     product_variables: {
+        normalboot: {
+            init_rc: ["perfprofd.rc"],
+        },
         pdk: {
             enabled: false,
         },
